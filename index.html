@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- css -->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<title>Web-Shop</title>
+	</head>
+	<body>
+		<header>
+			<div class="header">
+				<div class="logo-header">
+					<h2><a href="index.html">Web-Shop</a></h2>
+				</div>
+				<ul class="logo-ul">
+					<li>Каталог</li>
+					<li>Поддержка</li>
+					<li>Контакты</li>
+				</ul>
+				<i class="fa-solid fa-cart-shopping logo-cart"></i>
+			</div>
+			<div class="cart-overlay hidden"></div>
+			<div class="cart-panel hidden">
+				<button class="cart-close">&times;</button>
+				<h3>Ваша корзина</h3>
+				<div class="cart-items"></div>
+				<!-- Сюда будут добавляться товары -->
+				<div class="cart-footer">
+					<p class="cart-total">
+						Итоговая цена: <span class="total-price">0</span> руб.
+					</p>
+					<button class="cart-buy">Купить</button>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="sliders">
+				<div class="slider">
+					<h1 class="slider-title">ЧЁРНАЯ ПЯТНИЦА</h1>
+					<h4 class="slider-subtitle">Скидки до 50%</h4>
+
+					<div class="slider-container">
+						<div class="slides">
+							<div class="slide">
+								<img src="assets/img/dbd.jpeg" alt="Slide 5" />
+							</div>
+							<div class="slide">
+								<img src="assets/img/rdr2.jpeg" alt="Slide 1" />
+							</div>
+							<div class="slide">
+								<img src="assets/img/elden.jpg" alt="Slide 2" />
+							</div>
+							<div class="slide">
+								<img
+									src="assets/img/farming-sim-2025-bannersp.jpg"
+									alt="Slide 3"
+								/>
+							</div>
+							<div class="slide">
+								<img
+									src="assets/img/blackmyth-1723969364570.jpg"
+									alt="Slide 4"
+								/>
+							</div>
+
+							<div class="slide">
+								<img src="assets/img/dbd.jpeg" alt="Slide 5" />
+							</div>
+							<div class="slide">
+								<img src="assets/img/rdr2.jpeg" alt="Slide 1" />
+							</div>
+						</div>
+						<div class="navigation">
+							<button class="nav-button prev">‹</button>
+							<button class="nav-button next">›</button>
+						</div>
+					</div>
+				</div>
+				<div class="slider">
+					<h1 class="slider-title">ВАЖНЫЕ НОВИНКИ</h1>
+					<h4 class="slider-subtitle">Успейте купить по скидке 30%</h4>
+
+					<div class="slider-container">
+						<div class="slides">
+							<div class="slide">
+								<img src="assets/img/liarsbar.jpg" alt="Slide 5" />
+							</div>
+							<div class="slide">
+								<img src="assets/img/rdr2.jpeg" alt="Slide 1" />
+							</div>
+							<div class="slide">
+								<img src="assets/img/elden.jpg" alt="Slide 2" />
+							</div>
+							<div class="slide">
+								<img
+									src="assets/img/farming-sim-2025-bannersp.jpg"
+									alt="Slide 3"
+								/>
+							</div>
+							<div class="slide">
+								<img
+									src="assets/img/blackmyth-1723969364570.jpg"
+									alt="Slide 4"
+								/>
+							</div>
+
+							<div class="slide">
+								<img src="assets/img/liarsbar.jpg" alt="Slide 5" />
+							</div>
+							<div class="slide">
+								<img src="assets/img/rdr2.jpeg" alt="Slide 1" />
+							</div>
+						</div>
+						<div class="navigation">
+							<button class="nav-button prev">‹</button>
+							<button class="nav-button next">›</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="cards">
+				<div class="card">
+					<img src="assets/img/elden.jpg" alt="" />
+					<h2>Elden Ring</h2>
+					<h3><i class="fa-brands fa-steam"></i> Экшены, RPG</h3>
+					<div class="card-price">
+						<p><span class="discount"> -25% </span> 1800 руб.</p>
+					</div>
+					<button class="to-cart">В КОРЗИНУ</button>
+				</div>
+				<div class="card">
+					<img src="assets/img/blackmyth-1723969364570.jpg" alt="" />
+					<h2>Black Myth Wukong</h2>
+					<h3><i class="fa-brands fa-steam"></i> Экшены, RPG, Приключения</h3>
+					<div class="card-price">
+						<p><span class="discount"> -35% </span> 2365 руб.</p>
+					</div>
+					<button class="to-cart">В КОРЗИНУ</button>
+				</div>
+				<div class="card">
+					<img src="assets/img/farming-sim-2025-bannersp.jpg" alt="" />
+					<h2>Farming Simulator 25</h2>
+					<h3><i class="fa-brands fa-steam"></i> Симуляторы</h3>
+					<div class="card-price">
+						<p><span class="discount"> -5% </span> 1455 руб.</p>
+					</div>
+					<button class="to-cart">В КОРЗИНУ</button>
+				</div>
+				<div class="card">
+					<img src="assets/img/rdr2.jpeg" alt="" />
+					<h2>Red Dead Redemption 2</h2>
+					<h3><i class="fa-brands fa-steam"></i> Экшены,Приключения</h3>
+					<div class="card-price">
+						<p><span class="discount"> -10% </span> 2245 руб.</p>
+					</div>
+					<button class="to-cart">В КОРЗИНУ</button>
+				</div>
+				<div class="card">
+					<img src="assets/img/liarsbar.jpg" alt="" />
+					<h2>Liar's Bar</h2>
+					<h3><i class="fa-brands fa-steam"></i> Симуляторы</h3>
+					<div class="card-price">
+						<p>280 руб.</p>
+					</div>
+					<button class="to-cart">В КОРЗИНУ</button>
+				</div>
+				<div class="card">
+					<img src="assets/img/dbd.jpeg" alt="" />
+					<h2>Dead by Daylight</h2>
+					<h3><i class="fa-brands fa-steam"></i> Экшены</h3>
+					<div class="card-price">
+						<p><span class="discount"> -30% </span> 1195 руб.</p>
+					</div>
+					<button class="to-cart">В КОРЗИНУ</button>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="footer">
+				<div class="icons-footer">
+					<img src="assets/img/sbp.svg" alt="" />
+					<img src="assets/img/mir.svg" alt="" />
+					<img src="assets/img/visa.svg" alt="" />
+					<img src="assets/img/mastercard.svg" alt="" />
+				</div>
+				<div class="footer-info">
+					<p>Пользовательское соглашение</p>
+					<p>Политика конфиденциальности</p>
+					<p>Политика возврата</p>
+					<p>Согласие на обработку персональных данных</p>
+				</div>
+			</div>
+		</footer>
+		<script src="assets/js/main.js"></script>
+		<script
+			src="https://kit.fontawesome.com/533f60afef.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
